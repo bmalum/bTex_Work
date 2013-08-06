@@ -1,12 +1,32 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+
+\usepackage{titlesec}
+
 \usepackage{lmodern}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\titleformat{\section}[frame]{\normalfont}
+    {\footnotesize \enspace SECTION \thesection
+     \enspace}{6pt}{\large\bfseries\filcenter}
+\titlespacing*{\section}{1pc}{*4}{*2.3}[1pc]
+
+
+\title{Test-Title}
+\setcounter{secnumdepth}
+
 \begin{document}
-Test
+\maketitle
+\tableofcontents
+
+\ldots etwas Text oberhalb \ldots
+\section{Ein Titel-Test}
+\section{Ein Titel-2}
+\section{Ein Titel-3}
+
 \end{document}
