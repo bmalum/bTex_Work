@@ -1,18 +1,23 @@
 \documentclass[10pt,a4paper]{report}
+\author{Martin Karrer}
+%% OOTB  - Usepackages 
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-
-\usepackage{titlesec}
-
 \usepackage{lmodern}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
+
+\usepackage{titlesec}   %% Used for The Section Transformation 
+
+
+
 \setcounter{secnumdepth}{3}   %% Numbering to 3rd Stage (here Subsubsection)
 \setcounter{tocdepth}{3}			 %% Numbering to 3rd Stage (here Subsubsection)
+
 
 %%  Boxed and Beautiful Section
 %%  Rest is a mutant of the first -> new SectionDesign     -//-  For Part Chapter and so on will be done soon 
@@ -31,10 +36,13 @@
      \enspace}{6pt}{\bfseries}
 \titlespacing*{\subsubsection}{1pc}{*4}{*2.3}[1pc]
 
+%% Setting Title here
 \title{Test-Title}
+\renewcommand{\thesection}{\arabic{section}}
 
 \begin{document}
 \maketitle
+
 \tableofcontents \newpage
 
 \section{Ein Titel-Test}
