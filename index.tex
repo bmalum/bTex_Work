@@ -11,22 +11,36 @@
 \usepackage{lmodern}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
-\titleformat{\section}[frame]{\normalfont}
-    {\footnotesize \enspace SECTION \thesection
-     \enspace}{6pt}{\large\bfseries\filcenter}
-\titlespacing*{\section}{1pc}{*4}{*2.3}[1pc]
+\setcounter{secnumdepth}{3}   %% Numbering to 3rd Stage (here Subsubsection)
+\setcounter{tocdepth}{3}			 %% Numbering to 3rd Stage (here Subsubsection)
 
+%%  Boxed and Beautiful Section
+%%  Rest is a mutant of the first -> new SectionDesign     -//-  For Part Chapter and so on will be done soon 
+\titleformat{\section}[frame]{\normalfont}
+    {\footnotesize \enspace SEKTION \thesection
+     \enspace}{6pt}{\large\bfseries\filcenter}
+\titlespacing*{\section}{1pc}{*4}{*2.3}[1pc]    
+
+\titleformat{\subsection}{\normalfont}
+    {\footnotesize \enspace - \thesubsection
+     \enspace}{6pt}{\large\bfseries\underline}
+\titlespacing*{\subsection}{1pc}{*4}{*2.3}[1pc]
+
+\titleformat{\subsubsection}{\normalfont}
+    {\footnotesize \enspace - \thesubsubsection
+     \enspace}{6pt}{\bfseries}
+\titlespacing*{\subsubsection}{1pc}{*4}{*2.3}[1pc]
 
 \title{Test-Title}
-\setcounter{secnumdepth}
 
 \begin{document}
 \maketitle
-\tableofcontents
+\tableofcontents \newpage
 
 \ldots etwas Text oberhalb \ldots
 \section{Ein Titel-Test}
 \section{Ein Titel-2}
-\section{Ein Titel-3}
+\subsection{Ein Titel-3}
+\subsubsection{Ein SubSubTitel-3}
 
 \end{document}
