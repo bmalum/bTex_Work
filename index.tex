@@ -21,6 +21,13 @@
 
 %%  Boxed and Beautiful Section
 %%  Rest is a mutant of the first -> new SectionDesign     -//-  For Part Chapter and so on will be done soon 
+\usepackage[avantgarde]{quotchap}
+\renewcommand\chapterheadstartvskip
+             {\vspace*{-5\baselineskip}}
+% Helvetica für Titel und Zitat wählen
+\usepackage{helvet}
+\renewcommand\sectfont{\sffamily\bfseries}
+
 \titleformat{\section}[frame]{\normalfont}
     {\footnotesize \enspace SEKTION \thesection
      \enspace}{6pt}{\large\bfseries\filcenter}
@@ -44,7 +51,7 @@
 \maketitle
 
 \tableofcontents \newpage
-
+\chapter{Ein Testkapitel}
 \section{Ein Titel-Test}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 \subsection{Ein Titel-3}
