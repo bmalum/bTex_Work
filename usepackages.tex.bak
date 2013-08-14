@@ -1,0 +1,24 @@
+%% This File is ONLY for \usepackage{xy}	%%
+%%  Pleas Comment ervery special package
+
+%% This is an Collection of Packages by bMalum
+%% There were no conflicts while testing 
+
+%% ToDo on Redmine at project.bmalum.com
+%% Get access -> support@bmalum.com
+%% Written by:
+%%				   bMalum (Martin, Karrer)
+
+
+% ------   Standart Packages norm. gen. by TexMaker a.o ------ %
+\usepackage[utf8]{inputenc}																				% UTF8 Input
+\usepackage[german]{babel}																				% Language {Babel}
+\usepackage{amsmath}																						% LaTex STD MathFont
+\usepackage{amsfonts}																						% LaTex STD Font
+\usepackage{amssymb}																						% LaTex STD Symbols
+\usepackage{graphicx}																						% LaTex STD Graphix
+\usepackage{lmodern}																						% - todo -
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}						% - todo -  Boders and Page Geomentry
+
+% ------    Packages added by bMalum ------ %
+\usepackage{titlesec}   																						% Used for The Section Transformation 
